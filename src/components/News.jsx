@@ -40,8 +40,8 @@ export default function News(props) {
   },[])
   
   return (
-    <> 
-      <h2 className='text-center my-4'>{props.heading}</h2>
+    <div style={{backgroundColor:"gray"}}> 
+      <h2 className='text-center py-4'>{props.heading}</h2>
       <InfiniteScroll
   dataLength={article.length} //This is important field to render the next data
   next={fetchMoreData}
@@ -60,7 +60,7 @@ export default function News(props) {
        </div>
     </InfiniteScroll>
            
-    </>
+    </div>
     )
 }
   
